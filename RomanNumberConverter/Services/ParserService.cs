@@ -19,6 +19,7 @@ namespace RomanNumberParser.Services
         private string rn;
         public int Parse(RomanNumber romanNumber)
         {
+            sum = 0;
             rn = romanNumber.Number;
             for (var i = 0; i < romanNumber.Number.Length; i++)
             {
@@ -58,5 +59,7 @@ namespace RomanNumberParser.Services
             if (ch == I) { return 1; }
             return 0;
         }
+
+
     }
 }
